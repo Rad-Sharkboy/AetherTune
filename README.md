@@ -1,4 +1,4 @@
-# AetherTune
+# AetherTune ⚡
 
 A lightweight, no-nonsense Android automation and optimization utility. AetherTune is built to give you actual, low-level control over your device's hardware performance and battery life. No corporate guardrails, no unnecessary bloat—just a clean tool to make your phone run the way it should have out of the box.
 
@@ -9,22 +9,22 @@ Modern stock ROMs are notoriously aggressive with background tracking but surpri
 
 ---
 
-## Core Features
+## 🛠️ Core Features
 
 ### 1. Custom Display Controls
 Take manual control over your panel's refresh rate floors and ceilings instead of letting stock optimization services make the choice for you.
-*   **Standby Drop:** Forces the display to drop down to its absolute physical minimum (10Hz or 24Hz) the second the screen goes off, preventing the panel from drawing unnecessary juice during Always-On Display (AOD).
-*   **Dynamic Ramping:** Restores full smoothness (up to 120Hz) instantly upon waking or unlocking the device so you don't lose that premium fluid feel when navigating the UI.
+* **Standby Drop:** Forces the display to drop down to its absolute physical minimum (10Hz or 24Hz) the second the screen goes off, preventing the panel from drawing unnecessary juice during Always-On Display (AOD).
+* **Dynamic Ramping:** Restores full smoothness (up to 120Hz) instantly upon waking or unlocking the device so you don't lose that premium fluid feel when navigating the UI.
 
 ### 2. Aggressive Doze Tuning
 Android naturally takes its sweet time putting the phone into a true deep sleep. This module rewrites that logic.
-*   **Instant Idle:** Bypasses the default multi-step wait timers and pushes the kernel straight into deep Doze mode as soon as the display cuts out.
-*   **Wakelock & Maintenance Blocking:** Temporarily flattens background maintenance windows while you sleep, preventing apps from randomly spinning up your CPU to sync non-essential data.
+* **Instant Idle:** Bypasses the default multi-step wait timers and pushes the kernel straight into deep Doze mode as soon as the display cuts out.
+* **Wakelock & Maintenance Blocking:** Temporarily flattens background maintenance windows while you sleep, preventing apps from randomly spinning up your CPU to sync non-essential data.
 
 ### 3. Interactive Debloat Wizard
 A clean, step-by-step setup script that lets you strip out pre-installed vendor junk and carrier bloatware based on your actual daily usage.
-*   **Preference Prompts:** Instead of a generic "remove all" script that might break system dependencies, the wizard asks you direct questions (e.g., *"Do you use the stock messaging app?"*) to safely determine what stays and what goes.
-*   **Under-the-Hood Safety:** Uses a safe uninstallation cache structure, meaning the background packages are unlinked from your active user profile but can still be restored easily if you change your mind.
+* **Preference Prompts:** Instead of a generic "remove all" script that might break system dependencies, the wizard asks you direct questions (e.g., *"Do you use the stock messaging app?"*) to safely determine what stays and what goes.
+* **Under-the-Hood Safety:** Uses a safe uninstallation cache structure, meaning the background packages are unlinked from your active user profile but can still be restored easily if you change your mind.
 
 ### 4. Quick System Tune
 A simple, one-tap dashboard option that cleans out system memory caches and optimizes background thread scheduling to cut down on frame drops and micro-stutters.
@@ -46,7 +46,7 @@ A simple, one-tap dashboard option that cleans out system memory caches and opti
 - [ ] Add an ambient light and brightness safety check to scale up refresh rates in pitch-black environments (preventing display tinting/flicker issues).
 
 ### Package Database & Calibration
-- [ ] Complete the master "safe-to-remove" package list for Samsung devices.
+- [ ] Complete the master "safe-to-remove" package list for CPU/GPU hardware on Samsung devices.
 - [ ] Map out specific debloat matrices for Pixel and OnePlus devices.
 - [ ] Create an exclusion whitelist so users can specify certain apps that should never be put into deep sleep or optimized.
 - [ ] Test the low-level hardware overrides across multiple Android versions to ensure stability.
@@ -58,5 +58,5 @@ A simple, one-tap dashboard option that cleans out system memory caches and opti
 
 ---
 
-## Disclaimer
-AetherTune alters hidden hardware profiles and uninstalls system-level packages. While designed with safety and standard rollback methods in mind, use this tool at your own risk. Pull requests and database updates for vendor packages are always welcome.
+## ⚠️ Disclaimer
+AetherTune alters hidden hardware profiles and uninstalls system-level packages. While designed with safety and standard rollback methods in mind, use this tool at your own risk. Pull requests and database updates for vendor packages \[e.g Realme/infinix etc] are always welcome.
