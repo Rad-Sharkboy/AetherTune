@@ -70,4 +70,4 @@ Because AetherTune requires deep system access to override hardware variables, i
 ---
 
 ## ⚠️ Disclaimer
-AetherTune alters hidden hardware profiles and uninstalls system-level packages. While designed with safety and standard rollback methods in mind, use this tool at your own risk. Pull requests and database updates for vendor packages [e.g. Realme/Infinix etc.] are always welcome.
+AetherTune alters hidden hardware profiles and uninstalls system-level packages. While designed with safety and standard rollback methods in mind, use this tool at your own risk. Pull requests and database updates for vendor packages \[e.g. Realme/Infinix etc.] are always welcome.
