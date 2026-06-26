@@ -4,7 +4,7 @@ A lightweight, no-nonsense Android automation and optimization utility. AetherTu
 
 ---
 
-## Why this exists
+## 🧐 Why this exists
 Modern stock ROMs are notoriously aggressive with background tracking but surprisingly lazy with actual hardware optimization. High-end displays get locked into rigid refresh rate buckets, and background apps wake up your CPU constantly even when the phone is sitting on a desk. AetherTune bridges that gap by letting you tune the system framework directly.
 
 ---
@@ -31,16 +31,27 @@ A simple, one-tap dashboard option that cleans out system memory caches and opti
 
 ---
 
-## Roadmap & Things To Do
+## ⚡ Quick Start & Installation
+Because AetherTune requires deep system access to override hardware variables, it cannot be installed as a standard app. We built a custom 1-Click Installer to handle the ADB bridging automatically.
+
+1. Download and extract the latest `AetherTune_Release.zip` to your PC.
+2. Ensure **USB Debugging** is enabled in your phone's Developer Options.
+3. Plug your phone into your PC via USB.
+4. Run `Install_AetherTune.bat` and follow the terminal prompts. 
+5. Unplug and enjoy.
+
+---
+
+## 🗺️ Roadmap & Things To Do
 
 ### UI/UX & Design Engine
 - [ ] Build a modern, highly aesthetic dashboard layout with minimal, clean visual transitions.
 - [ ] Design the interactive wizard interface for the debloater using a step-by-step card stack.
-- [ ] Implement true AMOLED black themes for deep contrast and lower power draw.
+- [x] Implement true AMOLED black themes for deep contrast and lower power draw. *(Setup Gateway Complete)*
 - [ ] Add quick-settings status tiles to toggle specific performance profiles with one tap.
 
 ### Core Automation & Subsystems
-- [ ] Implement local permission binding so the app can run background commands seamlessly without needing a PC connection after the first setup.
+- [x] Implement local permission binding so the app can run background commands seamlessly without needing a PC connection after the first setup.
 - [ ] Fine-tune the core background service to track screen broadcast events instantly without lag.
 - [ ] Write an automated safeguard that pauses aggressive Doze cycles if it detects a high-priority system task or emergency broadcast.
 - [ ] Add an ambient light and brightness safety check to scale up refresh rates in pitch-black environments (preventing display tinting/flicker issues).
@@ -52,11 +63,11 @@ A simple, one-tap dashboard option that cleans out system memory caches and opti
 - [ ] Test the low-level hardware overrides across multiple Android versions to ensure stability.
 
 ### Deployment & Documentation
-- [ ] Package and compile the initial alpha build for internal closed testing.
+- [x] Package and compile the initial alpha build for internal closed testing. *(Installer Pipeline Built)*
 - [ ] Create an extensive wiki/guide on GitHub Pages covering initial permissions setup.
 - [ ] Move to open public beta launch.
 
 ---
 
 ## ⚠️ Disclaimer
-AetherTune alters hidden hardware profiles and uninstalls system-level packages. While designed with safety and standard rollback methods in mind, use this tool at your own risk. Pull requests and database updates for vendor packages \[e.g Realme/infinix etc] are always welcome.
+AetherTune alters hidden hardware profiles and uninstalls system-level packages. While designed with safety and standard rollback methods in mind, use this tool at your own risk. Pull requests and database updates for vendor packages [e.g. Realme/Infinix etc.] are always welcome.
